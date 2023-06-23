@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Trial";
+  src: url("./AeonikProTRIAL-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Trial";
+  src: url("./AeonikProTRIAL-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Trial";
+  src: url("./AeonikProTRIAL-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}

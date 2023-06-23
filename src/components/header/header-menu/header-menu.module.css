@@ -1,0 +1,52 @@
+.active {
+  color: var(--colors-interface-primary);
+}
+
+.pending {
+  color: var(--colors-interface-secondary);
+}
+
+@keyframes rotationArrowUp {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+  }
+}
+
+@keyframes rotationArrowDown {
+  0% {
+    -webkit-transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+.arrowDown:hover {
+  -webkit-animation: rotationArrowUp 0.3s linear both;
+}
+
+.arrowDown {
+  -webkit-animation: rotationArrowDown 0.3s linear;
+}
+
+.dropDownContent {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropDownContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.dropDownContainer:hover .dropDownContent {
+  display: block;
+}
+
+.dropDownContainer:hover .arrowDown {
+  -webkit-animation: rotationArrowUp 0.3s linear both;
+}

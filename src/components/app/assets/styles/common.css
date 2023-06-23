@@ -1,0 +1,40 @@
+:root {
+  --colors-interface-secondary: #666666;
+  --colors-interface-primary: #000000;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.text {
+  font-family: "Trial", sans-serif;
+}
+
+.text_size_small {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.text_size_medium {
+  font-size: 14px;
+  line-height: 20px;
+}

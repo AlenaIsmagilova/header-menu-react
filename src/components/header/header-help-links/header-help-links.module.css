@@ -1,0 +1,7 @@
+.active {
+  color: var(--colors-interface-primary);
+}
+
+.pending {
+  color: var(--colors-interface-secondary);
+}
