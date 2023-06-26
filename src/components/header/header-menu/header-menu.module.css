@@ -32,10 +32,35 @@
   -webkit-animation: rotationArrowDown 0.3s linear;
 }
 
+.arrowRight {
+  width: 16px;
+  height: 16px;
+}
+
+.dropDownContentForNoteBook {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: var(--colors-interface-white);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.04);
+  padding: 10px 0 10px 16px;
+  box-sizing: border-box;
+  min-width: 196px;
+  top: 16px;
+  right: -90%;
+}
+
 .dropDownContent {
   display: none;
   position: absolute;
   z-index: 1;
+  min-width: 196px;
+  background-color: var(--colors-interface-white);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.04);
+  padding: 10px 0 10px 16px;
+  box-sizing: border-box;
 }
 
 .dropDownContainer {
@@ -47,6 +72,70 @@
   display: block;
 }
 
+.dropDownContainer:hover .dropDownContentTitle {
+  color: var(--colors-interface-secondary);
+}
+
+.dropDownContainerForNotebook:hover .dropDownContentForNoteBook {
+  display: block;
+}
+
+.contentWithArrow:hover {
+  background-color: var(--colors-interface-lighter-grey);
+}
+
 .dropDownContainer:hover .arrowDown {
   -webkit-animation: rotationArrowUp 0.3s linear both;
+}
+
+.mainContainer {
+  display: flex;
+  width: 100%;
+  padding: 20px 16px;
+  max-width: 1280px;
+  box-sizing: border-box;
+}
+
+.itemsList {
+  display: flex;
+  align-items: center;
+  margin-left: 64px;
+  gap: 16px;
+}
+
+.dropDownContentTitle {
+  display: flex;
+  align-items: center;
+  color: var(--colors-interface-grey);
+}
+
+.menuContent {
+  color: var(--colors-interface-grey);
+}
+
+.dropDownContainerForNotebook {
+  color: var(--colors-interface-secondary);
+}
+
+.content {
+  color: var(--colors-interface-secondary);
+  margin-bottom: 6px;
+}
+
+.unactiveContent {
+  color: var(--colors-interface-grey);
+  margin-bottom: 6px;
+}
+
+.contentWithArrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.separator {
+  background-color: var(--colors-interface-light-grey);
+  height: 1px;
+  min-width: 196px;
+  margin: 11px 0 16px;
 }

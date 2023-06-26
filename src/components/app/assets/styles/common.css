@@ -1,6 +1,17 @@
 :root {
-  --colors-interface-secondary: #666666;
-  --colors-interface-primary: #000000;
+  --colors-interface-secondary: #000000;
+  --colors-interface-primary: #213fb4;
+  --colors-interface-grey: #666666;
+  --colors-interface-light-grey: #d9d9d9;
+  --colors-interface-light-blue: #e5eff9;
+  --colors-interface-white: #ffffff;
+  --colors-interface-lighter-grey: #f9f9f9;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 body {
