@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { FC, useState } from "react";
-import button from "../../app/assets/images/Vector.svg";
+import button from "../../app/assets/images/Cross.svg";
 import styles from "./header-information.module.css";
 
 const HeaderInformation: FC = () => {
@@ -18,7 +18,7 @@ const HeaderInformation: FC = () => {
           поддержка работает в обычном режиме, а оформить заказ можно 24/7 на
           сайте или в приложении.
         </p>
-        <div>
+        <div className={styles.buttonWrapper}>
           <button
             type="button"
             className={classNames("p-0", styles.button)}

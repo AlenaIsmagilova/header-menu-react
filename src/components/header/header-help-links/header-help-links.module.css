@@ -1,7 +1,55 @@
 .active {
   color: var(--colors-interface-primary);
+  text-decoration: none;
 }
 
 .pending {
   color: var(--colors-interface-secondary);
+  text-decoration: none;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerForContacts {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navigation {
+  padding: 8px 16px;
+  width: 100%;
+  max-width: 1280px;
+  box-sizing: border-box;
+  background-color: var(--colors-interface-lighter-grey);
+}
+
+.b2bContent {
+  color: var(--colors-interface-secondary);
+}
+
+.contactsContent {
+  color: var(--colors-interface-grey);
+}
+
+.inspirationContent {
+  color: var(--colors-interface-primary);
+  width: 113px;
+  height: 16px;
+  border: 0;
+  border-radius: 12px;
+  background-color: var(--colors-interface-light-blue);
+  padding: 0 16px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.contentWithArrow {
+  display: flex;
+  align-items: center;
 }

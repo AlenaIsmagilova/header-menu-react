@@ -12,8 +12,9 @@ const App = () => {
       <HeaderHelpLinks />
       <HeaderMenu />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/photobooks" element={<PhotoBooks />} />
+        <Route path="/" element={<HomePage />}>
+          <Route path="/photobooks" element={<PhotoBooks />} />
+        </Route>
       </Routes>
     </>
   );
