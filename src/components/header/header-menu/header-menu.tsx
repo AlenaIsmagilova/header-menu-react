@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { FC, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../../logo/logo";
 import styles from "./header-menu.module.css";
@@ -6,8 +6,10 @@ import arrowDown from "../../app/assets/images/MediumArrowDown.svg";
 import arrowRight from "../../app/assets/images/SmallArrowRight.svg";
 import classNames from "classnames";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import view from "../../app/assets/images/View.svg";
+import basket from "../../app/assets/images/Basket.svg";
 
-const HeaderMenu = () => {
+const HeaderMenu: FC = () => {
   const [isContainerHovered, setIsContainerHovered] = useState(false);
   const [isDropDownMenuOpened, setIsDropDownMenuOpened] = useState(false);
 
@@ -201,6 +203,16 @@ const HeaderMenu = () => {
           <TabPanel></TabPanel>
           <TabPanel></TabPanel>
         </Tabs>
+        <div className={styles.wrapperForButton}>
+          <img src={view} alt="вид панели" />
+          <img src={basket} alt="корзина" />
+          <button
+            type="button"
+            className={classNames(styles.button, "text", "text_size_medium")}
+          >
+            Вход
+          </button>
+        </div>
       </div>
     </>
   );

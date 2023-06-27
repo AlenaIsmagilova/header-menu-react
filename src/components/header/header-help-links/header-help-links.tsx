@@ -2,8 +2,9 @@ import classNames from "classnames";
 import { NavLink } from "react-router-dom";
 import styles from "./header-help-links.module.css";
 import arrowDown from "../../app/assets/images/MediumArrowDown.svg";
+import { FC } from "react";
 
-const HeaderHelpLinks = () => {
+const HeaderHelpLinks: FC = () => {
   const styleForLink: any = ({ isActive, isPending }) =>
     isPending ? styles.pending : isActive ? styles.active : "";
 

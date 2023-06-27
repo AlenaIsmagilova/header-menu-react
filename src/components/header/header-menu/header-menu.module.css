@@ -147,3 +147,19 @@
   border-bottom: 1px solid var(--colors-interface-secondary);
   color: var(--colors-interface-secondary);
 }
+
+.button {
+  width: 57px;
+  height: 32px;
+  background-color: var(--colors-interface-light-grey);
+  border-radius: 4px;
+  border: none;
+  padding: 6px 12px;
+  box-sizing: border-box;
+}
+
+.wrapperForButton {
+  display: flex;
+  align-items: flex-start;
+  margin-left: auto;
+}
