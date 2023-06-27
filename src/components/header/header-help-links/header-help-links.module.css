@@ -11,6 +11,7 @@
 .mainContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .containerForContacts {
@@ -19,12 +20,18 @@
   gap: 16px;
 }
 
-.navigation {
-  padding: 8px 16px;
-  width: 100%;
+.navWrapper {
+  padding: 8px 0;
   max-width: 1280px;
+  width: 100%;
   box-sizing: border-box;
+}
+
+.navigation {
   background-color: var(--colors-interface-lighter-grey);
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .b2bContent {
