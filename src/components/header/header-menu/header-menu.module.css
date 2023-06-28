@@ -16,6 +16,11 @@
   }
 }
 
+.arrowDown {
+  width: 24px;
+  height: 24px;
+}
+
 .arrowDown:hover {
   -webkit-animation: rotationArrowUp 0.3s linear both;
 }
@@ -58,6 +63,8 @@
 .dropDownContainer {
   position: relative;
   display: inline-block;
+  height: 36px;
+  color: var(--colors-interface-grey);
 }
 
 .dropDownContainer:hover .dropDownContent {

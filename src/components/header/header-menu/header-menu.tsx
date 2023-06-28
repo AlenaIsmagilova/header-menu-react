@@ -84,117 +84,119 @@ const HeaderMenu: FC = () => {
                 В подарок
               </NavLink>
             </Tab>
-            <Tab className={styles.tab} selectedClassName={styles.selectedTab}>
-              <li
-                className={styles.dropDownContainer}
-                onMouseOver={onMouseOverHandler}
+            <Tab
+              className={styles.dropDownContainer}
+              selectedClassName={styles.selectedTab}
+              onMouseOver={onMouseOverHandler}
+            >
+              <NavLink
+                to="/products"
+                className={classNames(styles.dropDownContentTitle, "link")}
               >
-                <div className={styles.dropDownContentTitle}>
-                  Ещё
-                  <img
-                    className={isContainerHovered ? styles.arrowDown : ""}
-                    src={arrowDown}
-                    alt="стрелка вниз"
-                  />
+                Ещё
+                <img
+                  className={isContainerHovered ? styles.arrowDown : ""}
+                  src={arrowDown}
+                  alt="стрелка вниз"
+                />
+              </NavLink>
+              {isDropDownMenuOpened && (
+                <div className={styles.dropDownContent}>
+                  <NavLink
+                    to="/products/tradition-book"
+                    className={classNames("link")}
+                  >
+                    <li
+                      className={styles.content}
+                      onClick={onDropDownMenuClickHandler}
+                    >
+                      Книга традиций
+                    </li>
+                  </NavLink>
+                  <NavLink
+                    to="/products/notebook"
+                    className={classNames("link")}
+                  >
+                    <li className={styles.dropDownContainerForNotebook}>
+                      <div className={styles.contentWithArrow}>
+                        Блокноты
+                        <img
+                          className={styles.arrowRight}
+                          src={arrowRight}
+                          alt="стрелка вправо"
+                        />
+                      </div>
+                      <div className={styles.separator}></div>
+                      <div className={styles.dropDownContentForNoteBook}>
+                        <NavLink
+                          to="/products/notebook/with-photo"
+                          className={classNames("link")}
+                        >
+                          <li
+                            className={styles.content}
+                            onClick={onDropDownMenuClickHandler}
+                          >
+                            Блокнот с фото
+                          </li>
+                        </NavLink>
+                        <NavLink
+                          to="/products/notebook/ready-made"
+                          className={classNames("link")}
+                        >
+                          <li
+                            className={styles.content}
+                            onClick={onDropDownMenuClickHandler}
+                          >
+                            Готовые блокноты
+                          </li>
+                        </NavLink>
+                      </div>
+                    </li>
+                  </NavLink>
+                  <li className={styles.unactiveContent}>Кому</li>
+                  <NavLink
+                    to="/products/to-friends"
+                    className={classNames("link")}
+                  >
+                    <li
+                      className={styles.content}
+                      onClick={onDropDownMenuClickHandler}
+                    >
+                      Друзьям
+                    </li>
+                  </NavLink>
+                  <NavLink
+                    to="/products/to-relatives"
+                    className={classNames("link")}
+                  >
+                    <li className={styles.unactiveContent}>Близким</li>
+                  </NavLink>
+                  <NavLink
+                    to="/products/to-just-merried"
+                    className={classNames("link")}
+                  >
+                    <li
+                      className={styles.content}
+                      onClick={onDropDownMenuClickHandler}
+                    >
+                      Молодожёнам
+                    </li>
+                  </NavLink>
+                  <div className={styles.separator}></div>
+                  <li className={styles.unactiveContent}>...</li>
+                  <NavLink
+                    to="/products/wedding"
+                    className={classNames("link")}
+                  >
+                    <li
+                      className={styles.content}
+                      onClick={onDropDownMenuClickHandler}
+                    >
+                      Свадьба
+                    </li>
+                  </NavLink>
                 </div>
-                {isDropDownMenuOpened && (
-                  <div className={styles.dropDownContent}>
-                    <NavLink
-                      to="/products/tradition-book"
-                      className={classNames("link")}
-                    >
-                      <li
-                        className={styles.content}
-                        onClick={onDropDownMenuClickHandler}
-                      >
-                        Книга традиций
-                      </li>
-                    </NavLink>
-                    <NavLink
-                      to="/products/notebook"
-                      className={classNames("link")}
-                    >
-                      <li className={styles.dropDownContainerForNotebook}>
-                        <div className={styles.contentWithArrow}>
-                          Блокноты
-                          <img
-                            className={styles.arrowRight}
-                            src={arrowRight}
-                            alt="стрелка вправо"
-                          />
-                        </div>
-                        <div className={styles.separator}></div>
-                        <div className={styles.dropDownContentForNoteBook}>
-                          <NavLink
-                            to="/products/notebook/with-photo"
-                            className={classNames("link")}
-                          >
-                            <li
-                              className={styles.content}
-                              onClick={onDropDownMenuClickHandler}
-                            >
-                              Блокнот с фото
-                            </li>
-                          </NavLink>
-                          <NavLink
-                            to="/products/notebook/ready-made"
-                            className={classNames("link")}
-                          >
-                            <li
-                              className={styles.content}
-                              onClick={onDropDownMenuClickHandler}
-                            >
-                              Готовые блокноты
-                            </li>
-                          </NavLink>
-                        </div>
-                      </li>
-                    </NavLink>
-                    <li className={styles.unactiveContent}>Кому</li>
-                    <NavLink
-                      to="/products/to-friends"
-                      className={classNames("link")}
-                    >
-                      <li
-                        className={styles.content}
-                        onClick={onDropDownMenuClickHandler}
-                      >
-                        Друзьям
-                      </li>
-                    </NavLink>
-                    <NavLink
-                      to="/products/to-relatives"
-                      className={classNames("link")}
-                    >
-                      <li className={styles.unactiveContent}>Близким</li>
-                    </NavLink>
-                    <NavLink
-                      to="/products/to-just-merried"
-                      className={classNames("link")}
-                    >
-                      <li
-                        className={styles.content}
-                        onClick={onDropDownMenuClickHandler}
-                      >
-                        Молодожёнам
-                      </li>
-                    </NavLink>
-                    <div className={styles.separator}></div>
-                    <li className={styles.unactiveContent}>...</li>
-                    <NavLink
-                      to="/products/wedding"
-                      className={classNames("link")}
-                    >
-                      <li
-                        className={styles.content}
-                        onClick={onDropDownMenuClickHandler}
-                      >
-                        Свадьба
-                      </li>
-                    </NavLink>
-                  </div>
-                )}
-              </li>
+              )}
             </Tab>
           </TabList>
           <TabPanel></TabPanel>
