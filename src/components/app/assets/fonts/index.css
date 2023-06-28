@@ -9,12 +9,12 @@
   font-family: "Trial";
   src: url("./AeonikProTRIAL-Light.woff") format("woff");
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "Trial";
   src: url("./AeonikProTRIAL-Bold.woff") format("woff");
-  font-style: normal;
-  font-weight: 500;
+  font-style: bold;
+  font-weight: 600;
 }

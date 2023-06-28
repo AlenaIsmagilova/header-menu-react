@@ -214,6 +214,7 @@ const HeaderMenu: FC = () => {
           </button>
         </div>
       </div>
+      <div className={styles.border}></div>
     </>
   );
 };

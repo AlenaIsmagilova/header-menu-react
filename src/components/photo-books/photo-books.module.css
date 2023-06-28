@@ -1,0 +1,92 @@
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: 100%;
+  margin-top: 56px;
+}
+
+.infoWrapper {
+  min-width: 813px;
+  margin-right: 24px;
+  display: flex;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  max-width: 294px;
+  gap: 8px;
+  margin-right: 125px;
+}
+
+.columnTitle {
+  color: var(--colors-interface-text-grey);
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.coverTitle {
+  color: var(--colors-interface-text-grey);
+  margin: 24px 0 16px;
+  font-weight: 400;
+}
+
+.productTitle {
+  color: var(--colors-interface-secondary);
+  font-weight: 500;
+}
+
+.productTitle:hover {
+  color: var(--colors-interface-primary);
+  cursor: zoom-in;
+}
+
+.pagesInBook {
+  color: var(--colors-interface-text-grey);
+}
+
+.bookWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  color: var(--colors-interface-primary);
+  text-decoration: underline var(--colors-interface-light-grey);
+  text-underline-offset: 3px;
+  margin-bottom: 48px;
+  font-weight: 400;
+}
+
+.costContent {
+  color: var(--colors-interface-secondary);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.costContent:hover {
+  color: var(--colors-interface-primary);
+  cursor: zoom-in;
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+}
+
+.costs {
+  min-width: 185px;
+  margin-right: 24px;
+}
+
+.newImage {
+  width: 41px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+.boxWithImage {
+  display: flex;
+  align-items: center;
+}

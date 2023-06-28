@@ -83,10 +83,15 @@
 .mainContainer {
   display: flex;
   width: 100%;
-  padding: 0;
-  margin: 20px 0;
-  max-width: 1280px;
+  padding: 0 15px;
+  margin-top: 20px;
+  max-width: 1310px;
   box-sizing: border-box;
+  font-weight: 500;
+}
+.border {
+  width: 100%;
+  max-width: 1280px;
   border-bottom: 1px solid var(--colors-interface-light-grey);
 }
 
@@ -105,6 +110,7 @@
 
 .menuContent {
   color: inherit;
+  font-weight: 500;
 }
 
 .menuSelectedContent {
@@ -146,6 +152,7 @@
 .selectedTab {
   border-bottom: 1px solid var(--colors-interface-secondary);
   color: var(--colors-interface-secondary);
+  font-weight: 500;
 }
 
 .button {
@@ -156,6 +163,7 @@
   border: none;
   padding: 6px 12px;
   box-sizing: border-box;
+  font-weight: 500;
 }
 
 .wrapperForButton {

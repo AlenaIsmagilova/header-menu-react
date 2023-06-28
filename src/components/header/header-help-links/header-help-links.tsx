@@ -5,9 +5,6 @@ import arrowDown from "../../app/assets/images/MediumArrowDown.svg";
 import { FC } from "react";
 
 const HeaderHelpLinks: FC = () => {
-  const styleForLink: any = ({ isActive, isPending }) =>
-    isPending ? styles.pending : isActive ? styles.active : "";
-
   return (
     <nav className={styles.navigation}>
       <div className={styles.navWrapper}>
@@ -24,7 +21,7 @@ const HeaderHelpLinks: FC = () => {
           <div>
             <NavLink
               to="/b2b"
-              className={classNames(styleForLink, "link", styles.b2bContent)}
+              className={classNames("link", styles.b2bContent)}
             >
               <li>Покупать как компания</li>
             </NavLink>
@@ -32,11 +29,7 @@ const HeaderHelpLinks: FC = () => {
           <div className={styles.containerForContacts}>
             <NavLink
               to="/inspiration"
-              className={classNames(
-                styleForLink,
-                "link",
-                styles.inspirationContent
-              )}
+              className={classNames("link", styles.inspirationContent)}
             >
               <li>
                 <button
@@ -52,31 +45,19 @@ const HeaderHelpLinks: FC = () => {
             </NavLink>
             <NavLink
               to="/constructor"
-              className={classNames(
-                styleForLink,
-                "link",
-                styles.contactsContent
-              )}
+              className={classNames("link", styles.contactsContent)}
             >
               <li>Помочь собрать книгу</li>
             </NavLink>
             <NavLink
               to="/vacancy"
-              className={classNames(
-                styleForLink,
-                "link",
-                styles.contactsContent
-              )}
+              className={classNames("link", styles.contactsContent)}
             >
               <li>Работать у нас</li>
             </NavLink>
             <NavLink
               to="/faq"
-              className={classNames(
-                styleForLink,
-                "link",
-                styles.contactsContent
-              )}
+              className={classNames("link", styles.contactsContent)}
             >
               <li className={styles.contentWithArrow}>
                 Помощь
@@ -85,11 +66,7 @@ const HeaderHelpLinks: FC = () => {
             </NavLink>
             <NavLink
               to="/contacts"
-              className={classNames(
-                styleForLink,
-                "link",
-                styles.contactsContent
-              )}
+              className={classNames("link", styles.contactsContent)}
             >
               <li>Контакты</li>
             </NavLink>
