@@ -2,6 +2,7 @@ import styles from "./photo-books.module.css";
 import photoBook from "../app/assets/images/PhotoBook.svg";
 import classNames from "classnames";
 import newImage from "../app/assets/images/Marker.svg";
+import { NavLink } from "react-router-dom";
 
 const PhotoBooks = () => {
   return (
@@ -85,8 +86,8 @@ const PhotoBooks = () => {
           >
             Красная тканевая книга с сердцем, 40 стр.
           </p>
-          <a
-            href="/products/all"
+          <NavLink
+            to="/products/all"
             className={classNames(
               "text",
               "text_size_medium",
@@ -95,7 +96,7 @@ const PhotoBooks = () => {
             )}
           >
             Все товары
-          </a>
+          </NavLink>
           <p
             className={classNames(
               "text",
@@ -178,8 +179,8 @@ const PhotoBooks = () => {
           >
             от 5,000 ₽
           </p>
-          <a
-            href="/products/all"
+          <NavLink
+            to="/products/all"
             className={classNames(
               "text",
               "text_size_medium",
@@ -188,7 +189,7 @@ const PhotoBooks = () => {
             )}
           >
             Все
-          </a>
+          </NavLink>
           <p
             className={classNames(
               "text",
@@ -229,8 +230,8 @@ const PhotoBooks = () => {
           >
             Мягкая
           </p>
-          <a
-            href="/products/all"
+          <NavLink
+            to="/products/all"
             className={classNames(
               "text",
               "text_size_medium",
@@ -239,7 +240,7 @@ const PhotoBooks = () => {
             )}
           >
             Все
-          </a>
+          </NavLink>
         </div>
         <div className={styles.pages}>
           <p
@@ -302,8 +303,8 @@ const PhotoBooks = () => {
           >
             160
           </p>
-          <a
-            href="/products/all"
+          <NavLink
+            to="/products/all"
             className={classNames(
               "text",
               "text_size_medium",
@@ -312,7 +313,7 @@ const PhotoBooks = () => {
             )}
           >
             Все
-          </a>
+          </NavLink>
         </div>
       </div>
       <div className={styles.imageWrapper}>

@@ -118,6 +118,8 @@
 .menuContent {
   color: inherit;
   font-weight: 500;
+  display: block;
+  height: 36px;
 }
 
 .menuSelectedContent {
