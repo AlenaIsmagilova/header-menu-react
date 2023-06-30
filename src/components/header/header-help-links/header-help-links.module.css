@@ -1,6 +1,5 @@
 .mainContainer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -8,6 +7,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  margin-left: 436px;
 }
 
 .navWrapper {
@@ -15,6 +15,8 @@
   max-width: 1280px;
   width: 100%;
   box-sizing: border-box;
+  max-height: 32px;
+  display: flex;
 }
 
 .navigation {
@@ -34,11 +36,14 @@
 .contactsContent {
   color: var(--colors-interface-text-grey);
   font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
 }
 
 .inspirationContent {
   color: var(--colors-interface-primary);
-  width: 113px;
   height: 16px;
   border: 0;
   border-radius: 12px;
@@ -48,10 +53,13 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
+  text-decoration: none;
   font-weight: 500;
 }
 
 .contentWithArrow {
   display: flex;
   align-items: center;
+  padding: 0 16px;
+  box-sizing: border-box;
 }

@@ -1,8 +1,8 @@
 import classNames from "classnames";
 import { NavLink } from "react-router-dom";
-import styles from "./header-help-links.module.css";
-import arrowDown from "../../app/assets/images/MediumArrowDown.svg";
 import { FC } from "react";
+import styles from "./header-help-links.module.css";
+import { arr } from "./data";
 
 const HeaderHelpLinks: FC = () => {
   return (
@@ -27,49 +27,22 @@ const HeaderHelpLinks: FC = () => {
             </NavLink>
           </div>
           <div className={styles.containerForContacts}>
-            <NavLink
-              to="/inspiration"
-              className={classNames("link", styles.inspirationContent)}
-            >
-              <li>
-                <button
-                  className={classNames(
-                    styles.inspirationContent,
-                    "text",
-                    "text_size_small "
-                  )}
+            {arr.map((item) => (
+              <NavLink to={item.to} className={item.customClassNameForNavLink}>
+                <li
+                  className={
+                    item.customClassNameForImg ? item.customClassNameForImg : ""
+                  }
                 >
-                  Вдохновиться
-                </button>
-              </li>
-            </NavLink>
-            <NavLink
-              to="/constructor"
-              className={classNames("link", styles.contactsContent)}
-            >
-              <li>Помочь собрать книгу</li>
-            </NavLink>
-            <NavLink
-              to="/vacancy"
-              className={classNames("link", styles.contactsContent)}
-            >
-              <li>Работать у нас</li>
-            </NavLink>
-            <NavLink
-              to="/faq"
-              className={classNames("link", styles.contactsContent)}
-            >
-              <li className={styles.contentWithArrow}>
-                Помощь
-                <img src={arrowDown} alt="стрелка вниз" />
-              </li>
-            </NavLink>
-            <NavLink
-              to="/contacts"
-              className={classNames("link", styles.contactsContent)}
-            >
-              <li>Контакты</li>
-            </NavLink>
+                  {item.title}
+                  {item.imgArrowSrc ? (
+                    <img src={item.imgArrowSrc} alt="стрелка вниз" />
+                  ) : (
+                    ""
+                  )}
+                </li>
+              </NavLink>
+            ))}
           </div>
         </ul>
       </div>
